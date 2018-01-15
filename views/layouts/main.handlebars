@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Eat-Da-Burger!</title>
+
+    <link rel="icon" href="/assets/img/barbecue-bacon-cheeseburger.jpg">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/burger_style.css">
+
+  </head>
+  <body>
+  
+    <div class="container">
+      
+        <div class="row">
+          <div class="col-md-12" style="text-align: center; padding-top: 10px;">
+            <img src="/assets/img/barbecue-bacon-cheeseburger.jpg" height="150px">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <h1>Eat-Da-Burger!</h1>
+          </div>
+        </div>
+
+      {{{body}}}
+
+      <!-- New Burgers -->
+      <form action="burger/create" method="POST"> 
+        
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4" style="text-align: center;padding-top: 10px;">
+            <textarea class="form-control" cols="50" rows="3" id="new_burger" name="burger_name"></textarea>
+          </div>
+        </div>
+
+            
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <button id="submit-button" type="submit" class="btn btn-primary">Submit</button><br><br>
+            Enter a burger you want to eat and Click the "Submit" button.
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    <!--jQuery stuff-->
+    
+        <script src="https://code.jquery.com/jquery.js"></script>
+
+
+  </body>
+</html>
